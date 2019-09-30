@@ -1,29 +1,19 @@
 {
-    "name": "mihaildev/yii2-ckeditor",
-    "keywords": ["yii", "wysiwyg", "editor", "CKEditor"],
-    "description": "Yii2 CKEditor",
-    "homepage": "https://github.com/MihailDev/yii2-ckeditor",
-    "license": "BSD-3-Clause",
-    "type": "yii2-extension",
-	"minimum-stability":"stable",
-    "authors": [
-        {
-            "name": "Mihail",
-            "email": "mihail.kucher@gmail.com",
-            "homepage": "https://github.com/MihailDev",
-            "role": "Developer"
-        }
-    ],
-    "autoload": {
-        "psr-4": {"mihaildev\\ckeditor\\": ""}
-    },
+    "name": "vanterbit/yii2-ckeditor",
+    "description": "Yii2 CKEditor - fork from MihailDev/yii2-ckeditor and improvements",
+    "type": "project",
     "require": {
         "yiisoft/yii2": "*"
     },
-	"extra": {
-		"asset-installer-paths": {
-			"npm-asset-library": "vendor/npm",
-			"bower-asset-library": "vendor/bower"
-		}
-	}
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Aleksandr Protchenko",
+            "email": "protchenko.88@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"vanterbit\\ckeditor\\": ""}
+    },
+    "minimum-stability": "stable"
 }
