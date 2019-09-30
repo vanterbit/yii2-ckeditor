@@ -1,7 +1,7 @@
 {
     "name": "vanterbit/yii2-ckeditor",
     "description": "Yii2 CKEditor - fork from MihailDev/yii2-ckeditor and improvements",
-    "type": "project",
+    "type": "yii2-extension",
     "require": {
         "yiisoft/yii2": "*"
     },
@@ -14,6 +14,12 @@
     ],
     "autoload": {
         "psr-4": {"vanterbit\\ckeditor\\": ""}
+    },
+    "extra": {
+		"asset-installer-paths": {
+			"npm-asset-library": "vendor/npm",
+			"bower-asset-library": "vendor/bower"
+		}
     },
     "minimum-stability": "stable"
 }
