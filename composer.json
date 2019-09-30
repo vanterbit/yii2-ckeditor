@@ -13,7 +13,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {"vanterbit\\yii2-ckeditor\\": ""}
+        "psr-4": {"vanterbit\\ckeditor\\": ""}
     },
     "minimum-stability": "stable"
 }
