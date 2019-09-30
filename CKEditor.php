@@ -4,7 +4,7 @@
  * Time: 1:18
  */
 
-namespace mihaildev\ckeditor;
+namespace vanterbit\ckeditor;
 
 
 use yii\helpers\ArrayHelper;
@@ -131,11 +131,11 @@ class CKEditor extends InputWidget{
 
         echo Html::endTag('div');
 		$js = [
-			'mihaildev.ckEditor.registerOnChange('.Json::encode($this->options['id']).');'
+			'vanterbit.ckEditor.registerOnChange('.Json::encode($this->options['id']).');'
 		];
 
 		if(isset($this->editorOptions['filebrowserUploadUrl']))
-			$js[] = "mihaildev.ckEditor.registerCsrf();";
+			$js[] = "vanterbit.ckEditor.registerCsrf();";
 
 		if(!isset($this->editorOptions['on']['instanceReady']))
 			$this->editorOptions['on']['instanceReady'] = new JsExpression("function( ev ){".implode(' ', $js)."}");
