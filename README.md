@@ -44,6 +44,16 @@ echo $form->field($post, 'content')->widget(CKEditor::className(),[
     ],
 ]);
 ```
+$form->field($model, $field)->widget(CKEditor::class, [
+    'editorOptions' => mihaildev\elfinder\ElFinder::ckeditorOptions('elfinder',
+            ['extraPlugins' => 'youtube,wpmore'],
+            [
+                'preset' => 'full',
+                'height' => 300,
+                'language' => $lang,
+                'filter' => 'image',
+    ]),
+])
 
 ## Полезные ссылки
 
