@@ -43,8 +43,8 @@ echo $form->field($post, 'content')->widget(CKEditor::className(),[
         'inline' => false, //по умолчанию false
     ],
 ]);
-```
-$form->field($model, $field)->widget(CKEditor::class, [
+
+echo $form->field($model, $field)->widget(CKEditor::class, [
     'editorOptions' => mihaildev\elfinder\ElFinder::ckeditorOptions('elfinder',
             ['extraPlugins' => 'youtube,wpmore'],
             [
@@ -54,6 +54,7 @@ $form->field($model, $field)->widget(CKEditor::class, [
                 'filter' => 'image',
     ]),
 ])
+```
 
 ## Полезные ссылки
 
